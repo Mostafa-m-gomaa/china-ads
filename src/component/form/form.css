@@ -1,0 +1,24 @@
+.ad-form {
+  text-align: center;
+  background-color: rgb(19, 19, 48);
+  padding: 80px 0;
+}
+
+@media (max-width: 767px) {
+  .p-4 {
+    min-width: 100% !important;
+    padding: 10px 0 !important;
+    margin: 0 auto !important;
+    gap: 15px !important;
+    font-size: 15px;
+    justify-content: center !important;
+  }
+  .p-4 .circle {
+    width: 7% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .p-4 .yaya {
+    display: none;
+  }
+}/*# sourceMappingURL=form.css.map */

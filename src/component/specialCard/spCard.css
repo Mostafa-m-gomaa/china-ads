@@ -1,0 +1,131 @@
+.sp-card {
+  padding: 80px 0;
+  background-color: rgb(214, 214, 214);
+  height: 100vh;
+}
+@media (max-width: 767px) {
+  .sp-card {
+    min-height: 150vh;
+  }
+}
+.sp-card .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sp-card .container .first {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .sp-card .container .first {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.sp-card .container .first .left {
+  width: 73%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  --tw-shadow: 0 1px 2px rgba(0,0,0,.05);
+  --tw-shadow-colored: 0 1px 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+@media (max-width: 767px) {
+  .sp-card .container .first .left {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+.sp-card .container .first .left div {
+  max-width: 90%;
+  overflow: hidden;
+}
+.sp-card .container .first .left .name {
+  font-weight: 800;
+  font-size: 30px;
+}
+.sp-card .container .first .left .address {
+  display: flex;
+  gap: 10px;
+}
+.sp-card .container .first .right {
+  width: 25%;
+  background-color: white;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  --tw-shadow: 0 1px 2px rgba(0,0,0,.05);
+  --tw-shadow-colored: 0 1px 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+@media (max-width: 767px) {
+  .sp-card .container .first .right {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+.sp-card .container .first .right a {
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+  background-color: rgb(22, 120, 201);
+  padding: 5px;
+  color: white;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.sp-card .container .first .right a:hover {
+  background-color: black;
+}
+.sp-card .container .first .right .lnks {
+  display: flex;
+  justify-content: space-between;
+}
+.sp-card .container .first .right img {
+  max-width: 150px;
+  min-width: 150px;
+  margin: 0 auto;
+  border-radius: 15pxs;
+}
+.sp-card .container .second {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-transform: capitalize;
+  display: flex;
+  gap: 20px;
+  --tw-shadow: 0 1px 2px rgba(0,0,0,.05);
+  --tw-shadow-colored: 0 1px 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+@media (max-width: 767px) {
+  .sp-card .container .second {
+    flex-wrap: wrap;
+  }
+}
+.sp-card .container .second img {
+  max-width: 130px;
+  min-width: 130px;
+  min-height: 110px;
+  max-height: 110px;
+}
+@media (max-width: 767px) {
+  .sp-card .container .second img {
+    max-width: 80px;
+    min-width: 80px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+}/*# sourceMappingURL=spCard.css.map */

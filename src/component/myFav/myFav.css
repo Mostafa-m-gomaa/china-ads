@@ -1,0 +1,106 @@
+.my-fav {
+  padding: 90px 0;
+}
+.my-fav h3 {
+  text-align: center;
+}
+.my-fav .fav-ads {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.my-fav .fav-ads .view-button {
+  background-color: rgb(16, 116, 173);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+.my-fav .fav-ads .ad-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+}
+.my-fav .fav-ads .ad-card:hover {
+  margin-bottom: 15px;
+  border: 1px solid var(--my-color);
+}
+.my-fav .fav-ads .ad-card .prods {
+  text-align: center;
+  width: 50%;
+}
+.my-fav .fav-ads .ad-card .prod {
+  min-width: 95%;
+  max-width: 95%;
+  margin: 10px auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 80%;
+}
+.my-fav .fav-ads .ad-card .heart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 6px;
+  background-color: #bebebe;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.my-fav .fav-ads .ad-card .heart svg {
+  fill: rgb(221, 0, 0);
+}
+.my-fav .fav-ads .ad-card .heart-checked {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 6px;
+  background-color: #bebebe;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.my-fav .fav-ads .ad-card .heart-checked svg {
+  fill: rgb(255, 0, 0);
+}
+.my-fav .fav-ads .ad-card .desc {
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.my-fav .fav-ads .ad-card .desc span {
+  color: #928a8a;
+}
+@media (max-width: 767px) {
+  .my-fav .fav-ads .ad-card .desc {
+    flex-direction: column;
+  }
+}
+.my-fav .fav-ads .ad-card img {
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 80px;
+  max-height: 80px;
+  border-radius: 8px;
+}
+.my-fav .fav-ads .ad-card .cont {
+  background-color: rgb(222, 222, 228);
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .my-fav .fav-ads .ad-card .cont {
+    flex-direction: column;
+  }
+  .my-fav .fav-ads .ad-card .cont .prods {
+    width: 95%;
+  }
+}/*# sourceMappingURL=myFav.css.map */

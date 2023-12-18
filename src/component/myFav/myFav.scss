@@ -1,0 +1,117 @@
+@import "../helpers/mixins";
+.my-fav{
+    padding: 90px 0;
+
+h3{text-align: center;}
+    .fav-ads{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .view-button{
+            background-color: rgb(16, 116, 173);
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            
+          }
+        .ad-card{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          transition: 0.3s;
+          overflow: hidden;
+          // padding: 10px;
+          border-radius: 8px;
+          // color: white;
+         border: 1px solid gainsboro;
+         &:hover{
+          margin-bottom: 15px;
+          border: 1px solid var(--my-color);
+         }
+
+         .prods{
+          text-align: center;
+          width: 50%;
+          
+         }
+         .prod{
+          min-width: 95%;
+          max-width: 95%;
+          margin: 10px auto;
+          overflow: hidden;
+      
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          height: 80%;
+         }
+         .heart{
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          // background-color: red;
+          padding: 6px;
+          background-color: #bebebe;
+          border-radius: 5px;
+          cursor: pointer;
+      
+          svg{
+            fill: rgb(221, 0, 0);
+            
+          }
+         }
+         .heart-checked{
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          // background-color: red;
+          padding: 6px;
+         background-color: #bebebe;
+          border-radius: 5px;
+          cursor: pointer;
+      
+          svg{
+            fill: rgb(255, 0, 0);
+            
+          }
+         }
+          .desc{
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            // justify-content: space-between;
+            span{
+              color: #928a8a;
+            }
+            @include media(mopile){
+            flex-direction: column;
+             }
+          }
+          img{
+            min-width: 80px;
+            max-width: 80px;
+            min-height: 80px;
+            max-height: 80px;
+            border-radius: 8px;
+          }
+          .cont{
+            background-color: rgb(222, 222, 228);
+          padding: 8px 15px;
+        display: flex;
+      justify-content: space-between;  
+      align-items: center;
+      @include media(mopile){
+        flex-direction: column;
+        .prods{
+          
+          width: 95%;
+        }
+         }
+        }}
+      
+      }
+}

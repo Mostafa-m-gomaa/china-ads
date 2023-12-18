@@ -1,0 +1,91 @@
+.profile {
+  padding: 90px 0;
+}
+.profile .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile h3 {
+  text-align: center;
+  padding: 15px;
+}
+.profile .my-ads {
+  text-align: center;
+  background-color: ghostwhite;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px -5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.profile .my-ads .card {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+.profile .my-ads .card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+.profile .my-ads .card__link,
+.profile .my-ads .card__exit,
+.profile .my-ads .card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+.profile .my-ads .card__exit {
+  font-size: 25px;
+  cursor: pointer;
+  color: red;
+  font-weight: 800;
+}
+.profile .my-ads .card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+.profile .my-ads .card__link:hover::after {
+  width: 100%;
+}
+.profile .my-ads .text {
+  color: white;
+}
+.profile .my-ads .card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+.profile .my-ads .card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+.profile .my-ads .card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+.profile .my-ads .card__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+.profile .my-ads .card-5 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+@media (max-width: 1600px) {
+  .profile .my-ads .cards {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=profile.css.map */

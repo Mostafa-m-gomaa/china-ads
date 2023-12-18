@@ -1,0 +1,98 @@
+.login-main {
+  padding-top: 120px;
+  height: 100vh;
+  background-color: #212121;
+  /*checkbox to switch from sign up to login*/
+  /*Login*/
+  /*Register*/
+  /*Button*/
+}
+.login-main .main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #240046;
+  max-height: 470px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 7px 7px 10px 3px rgba(36, 0, 70, 0.1568627451);
+  width: 30%;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .login-main .main {
+    width: 90%;
+  }
+}
+.login-main .form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+}
+.login-main #chk {
+  display: none;
+}
+.login-main .login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.login-main .login label {
+  margin: 5% 0 5%;
+}
+.login-main label {
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.login-main .input {
+  width: 100%;
+  height: 40px;
+  background: #e0dede;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+.login-main .register {
+  background: #eee;
+  border-radius: 60%/10%;
+  transform: translateY(10%);
+  transition: 0.8s ease-in-out;
+}
+.login-main .register label {
+  color: #573b8a;
+  transform: scale(0.6);
+}
+.login-main #chk:checked ~ .register {
+  transform: translateY(-55%);
+}
+.login-main #chk:checked ~ .register label {
+  transform: scale(1);
+  margin: 4% 0;
+}
+.login-main #chk:checked ~ .login label {
+  transform: scale(0.6);
+  margin: 5% 0 5%;
+}
+.login-main .form button {
+  width: 85%;
+  height: 40px;
+  margin: 12px auto 10%;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.login-main .form button:hover {
+  background-color: #6d44b8;
+}/*# sourceMappingURL=login.css.map */
